@@ -4,11 +4,11 @@
 #
 SOURCES=( screen isight )
 # IMGSRC=isight
-COUNTER=0;
 
 for src in "${SOURCES[@]}"
 do
 
+  COUNTER=0;
   rm output/$src/series/*.jpg
 
   for i in `find output/$src -name '*.jpg'` ;

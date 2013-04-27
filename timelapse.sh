@@ -17,7 +17,8 @@ while true; do
     # If you have a webcam, you might want to capture that too.
     echo "Capturing isight at $timestamp."
     ./imagesnap/imagesnap -q "output/isight/isight-$timestamp.jpg";
-    sleep 60;
+    # sleep 60;
+    sleep 120;
 done;
 
 # After it's finished, you probably want to play around with image
