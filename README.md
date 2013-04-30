@@ -11,10 +11,32 @@ I've only tested these on my Mac, which is currently:
 - 8 Gb RAM
 - Mac OSX Lion v10.8.3
 
-Use at your own risk. The License is WTFPL (see LICENSE.txt).
+USE AT YOUR OWN RISK. The License is WTFPL (see LICENSE.txt).
+
+## Requirements
+
+- screencapture (built in to Mac OS X)
+- imagesnap (included in this repo)
+- [ffmpeg](http://ffmpeg.org/)
 
 ## Useage
 
+The only external hard requirement for these scripts (outside of the Mac environment) is the ffmpeg library.
+
+The scripts assume all work will be done in the current directory.
+
+To start the timelapse screenshots run `./timelapse`.
+
+I set it to run every 2 minutes (120 seconds), but you can adjust that in the `timelapse.sh` file.
+
+When you're done taking snapshots, `Ctrl-C` to stop the process.
+
+Then, run `./create-timelapse.sh` to gather the images and create two videos:
+
+- An `output/videos/timelapse-isight.mov` file for the iSight webcam pictures.
+- An `output/videos/timelapse-screen.mov` file for the screenshot pictures.
+
+Enjoy!
 
 ## Acknowledgements
 
